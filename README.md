@@ -1,6 +1,6 @@
-# KittenMongoose
+# SRYF
 
-A school project to practice mongoose
+Web application destined to game master for handle sound and display image during roleplay parties
 
 ## Requirements
 
@@ -10,7 +10,7 @@ A school project to practice mongoose
 
 ## Installation
 
-- Clone repository : `git clone git@github.com:snipzer/kittenMongoose.git`
+- Clone repository : `git clone https://github.com/snipzer/sryf.git`
 - Copy `.env.exemple` to `.env`
 
 
