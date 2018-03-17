@@ -1,0 +1,8 @@
+{
+  "name": "Manage email campaigns API",
+  "version": "0.0.1",
+  "description": "The best api for manage campaigns !",
+  "template" : {
+    "withCompare" : false
+  }
+}
