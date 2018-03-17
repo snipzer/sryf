@@ -1,7 +1,7 @@
 import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
-import KittenController from './controller/kittenController';
+import KittenController from './controller/userController';
 
 
 export default class Server {

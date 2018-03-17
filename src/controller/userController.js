@@ -16,13 +16,13 @@ export default class KittenController {
     }
 
     getKittens(req, res) {
-        this.kittenRepository.getKittens()
+        this.kittenRepository.getUsers()
             .then(kittens => this.sendJsonResponse(res, this.httpStatusService.ok, kittens))
             .catch(err => this.sendJsonResponse(res, this.httpStatusService.internalServerError, err));
     }
 
     getKittenByName(req, res) {
-        this.kittenRepository.getKittenByName(req.body.name)
+        this.kittenRepository.getUserByMail(req.body.name)
             .then(kitten => this.sendJsonResponse(res, this.httpStatusService.ok, kitten))
             .catch(err => this.sendJsonResponse(res, this.httpStatusService.internalServerError, err));
     }
@@ -37,7 +37,7 @@ export default class KittenController {
                 req.body.secondaryColor,
                 req.body.speciesName
             );
-            this.kittenRepository.createKitten(information[0], information[1])
+            this.kittenRepository.createUser(information[0], information[1])
                 .then(kitten => this.sendJsonResponse(res, this.httpStatusService.ok, kitten))
                 .catch(err => this.sendJsonResponse(res, this.httpStatusService.internalServerError, err));
         } catch(err) {
